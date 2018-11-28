@@ -7,9 +7,9 @@
     {% else %}
       <span class="previous">Previous</span>
     {% endif %}
-    <span class="page_number">
+    <!-- <span class="page_number">
       {{ paginator.page }} of {{ paginator.total_pages }}
-    </span>
+    </span> -->
     {% if paginator.next_page %}
       <a href="{{ paginator.next_page_path | relative_url }}" class="next">Next</a>
     {% else %}
