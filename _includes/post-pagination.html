@@ -1,0 +1,20 @@
+<ul id="post-pagination" class="pagination">
+  {% if page.previous.url %}
+  <li>
+    <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}"><span class=""></span> {{ page.previous.title | truncate: 15 }}</a>
+  </li>
+  {% else %}
+  <li>
+    <a href="{{"/blog" | relative_url}}"><span class=""></span>Back</a>
+  </li>
+  {% endif %}
+  {% if page.next.url %}
+  <li class="">
+    <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">{{ page.next.title | truncate: 15 }} <span class=""></span></a>
+  </li>
+  {% else %}
+  <li class="">
+    <a href="https://twitter.com/{{site.twitter}}" target="_blank">Follow<span class=""></span></a>
+  </li>
+  {% endif %}
+</ul>

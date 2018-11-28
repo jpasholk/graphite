@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<h2 class="title">{{ page.title }}</h2>
+
+<p class="author">
+  <span class="date">{{ page.date | date: "%B %d, %Y" }}</span>
+  {% include reading-time-post.html %}
+</p>
+
+{{ content }}
+
+{% include post-pagination.html %}

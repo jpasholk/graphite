@@ -1,0 +1,40 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+nav {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100vw;
+  @media screen and (max-width: 768px) {
+    // flex-direction: column;
+  }
+  h1 {
+    flex: 1 1 auto;
+    @media (max-width: 768px) {
+      font-size: 3rem;
+      color: red;
+    }
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 50%;
+    justify-content: flex-end;
+    
+    li {
+      list-style: none;
+      text-transform: uppercase;
+      margin: 0 0 0 2rem;
+      @media screen and (max-width: 768px) {
+        margin: .5rem 0 0 1rem;
+      }
+    }
+  }
+}

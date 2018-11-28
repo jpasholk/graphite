@@ -1,0 +1,85 @@
+# Site configuration
+
+# 1. Files excluded from Jekyll builds
+# 2. Installed Gems
+# 3. Gem settings
+# 4. Jekyll settings
+# 5. Collections
+# 6. Jekyll collections settings
+# 7. Site settings
+# 8. Author Information
+# 9. Site navigation
+
+# 1. Files excluded from Jekyll builds
+exclude:
+- README.md
+- CODE_OF_CONDUCT.md
+- CONTRIBUTING.md
+- LICENSE
+- CNAME
+- Gemfile
+- Gemfile.lock
+- vendor/
+- node_modules/
+
+# 2. Installed Gems
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# 3. Gem settings
+paginate_path: "/blog/page:num/"
+paginate: 1
+
+# 4. Jekyll settings
+permalink: /:year/:month/:day/:title/
+excerpt_separator: "<!--more-->"
+timezone: America/Los_Angeles # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+sass:
+    sass_dir: _sass
+
+markdown: kramdown
+defaults:
+  -
+    scope:
+      path: "" # all files
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true  # add comments to all blog posts
+  -
+    scope:
+      path: "" # all files
+    values:
+      layout: "page"
+      show-avatar: true
+
+# 5. Collections
+# Not using collections at this time
+
+# 6. Jekyll collections settings
+# Not using collections at this time
+
+# 7. Site settings
+title: Graphite
+description: >- # this means to ignore newlines until "baseurl:"
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. https://example.com
+
+locale:
+lang:
+
+# 8. Author Information
+author:
+
+  name:
+  email:
+  avatar:  #path/to/avatar.png
+
+  social:
+    twitter:
+    facebook:
+    github:

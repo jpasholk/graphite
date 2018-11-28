@@ -1,0 +1,86 @@
+/*
+Inter UI Font From Rasmus Anderson:
+https://rsms.me/inter/
+*/
+
+@import url('https://rsms.me/inter/inter-ui.css');
+
+html {
+  font-family: 'Inter UI', sans-serif;
+}
+
+// This is breaking stuff...
+// @supports (font-variation-settings: normal) {
+//   html { font-family: 'Inter UI var alt', sans-serif; }
+// }
+
+/*
+Typeography scale taken from here: http://typecast.com/blog/a-more-modern-scale-for-web-typography
+*/
+
+body {
+  font-size: 100%;
+  font-size: 1em;
+  line-height: 1.25;
+  @media screen and (min-width: 768px) {
+    font-size: 1em;
+    line-height: 1.375;
+  }
+  p.author {
+    font-size: .9rem;
+    margin-top: 1rem auto;
+  }
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-size-adjust: 0.5;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.25;
+  @media screen and (min-width: 768px) {
+    font-size: 3em;
+    line-height: 1.05;
+  }
+}
+
+h2 {
+  font-size: 1.625em;
+  line-height: 1.15384615em;
+  @media screen and (min-width: 768px) {
+    font-size: 2.25em;
+    line-height: 1.25em;
+  }
+}
+
+h3 {
+  font-size: 1.375em;
+  line-height: 1.13636364em;
+  @media screen and (min-width: 768px) {
+    font-size: 1.75em ;
+    line-height: 1.25em;
+  }
+}
+
+h4 {
+  font-size: 1.125em;
+  line-height: 1.11111111em;
+  @media screen and (min-width: 768px) {
+    font-size: 1.125em;
+    line-height: 1.22222222em;
+  }
+}
+
+blockquote {
+  font-size: 1.25em;
+  line-height: 1.25;
+  @media screen and (min-width: 768px) {
+    font-size: 1.5em;
+    line-height: 1.45833333;
+  }
+}
+
+footer p {
+  font-size: 1.5rem;
+}
