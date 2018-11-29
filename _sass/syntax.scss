@@ -13,10 +13,12 @@ div.highlight {
 pre.highlight {
   margin: 0 2rem;
   padding: 1rem 0;
+  overflow: scroll;
 }
 
 figure.highlight {
   margin: 0;
   padding: 0 1.1rem;
   border-radius: 3px;
+  overflow: scroll;
 }
