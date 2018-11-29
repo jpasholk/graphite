@@ -1,8 +1,9 @@
 * {
   box-sizing: border-box;
-  a {
-    text-decoration: none;
-  }
+}
+
+img {
+  border-radius: 4px;
 }
 
 .wrapper {
@@ -58,6 +59,36 @@
   padding-inline-start: 0;
   -webkit-padding-start: 0;
 }
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: $dk-grey;
+}
+
+thead th:nth-child(1) {
+  border-radius: 4px 0 0 0;
+}
+
+thead th:nth-last-child(1) {
+  border-radius: 0 4px 0 0;
+}
+
+th, td {
+  padding: .4rem;
+}
+
+tbody tr:nth-child(even) {
+  background-color: $lt-grey;
+}
+
+tbody tr:nth-last-child(1) {
+  border-radius: 0 0 4px 4px;
+}
+
 
 footer {
   p {

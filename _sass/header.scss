@@ -10,6 +10,9 @@ nav {
   justify-content: space-between;
   align-items: baseline;
   width: 100vw;
+  a {
+    text-decoration: none;
+  }
   @media screen and (max-width: 768px) {
     // flex-direction: column;
   }
@@ -27,7 +30,7 @@ nav {
     flex-wrap: wrap;
     flex: 0 1 50%;
     justify-content: flex-end;
-    
+
     li {
       list-style: none;
       text-transform: uppercase;
