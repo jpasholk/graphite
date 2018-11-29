@@ -1,11 +1,80 @@
 <head>
+  <!--
+  A free guide to <head> elements
+  https://gethead.info/
+  -->
+
+  <!--
+  The following 2 meta tags *must* come first in the <head>
+  to consistently ensure proper document rendering.
+  Any other head element should come *after* these tags.
+  -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--
+  Allows control over where resources are loaded from.
+  Place as early in the <head> as possible, as the tag
+  only applies to resources that are declared after it.
+  -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
 
-  <title>{{ site.title }}</title>
+  {% assign page_title = page.title | default: site.title %}
+  {% assign page_desc = page.description | default: site.description %}
 
+  <title>{{ page_title }}</title>
+
+  <!-- Set the base URL for all relative URLs within the document -->
   <base href="">
 
+  <!-- CSS file -->
   <link rel="stylesheet" href="{{ "assets/css/styles.css" | relative_url }}">
-  
+
+  <!-- Theme Color for Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#4285f4">
+  <!-- Short description of the document (limit to 150 characters) -->
+  <!-- This content *may* be used as a part of search engine results. -->
+  <meta name="description" content="{{ page_desc }}">
+
+  <!-- Control the behavior of search engine crawling and indexing -->
+  <meta name="robots" content="index,follow"><!-- All Search Engines -->
+  <meta name="googlebot" content="index,follow"><!-- Google Specific -->
+
+  <!-- Tells Google not to show the sitelinks search box -->
+  <meta name="google" content="nositelinkssearchbox">
+
+  <!-- Tells Google not to provide a translation for this document -->
+  <meta name="google" content="notranslate">
+
+  <!-- Verify website ownership -->
+
+  <!-- Google Search Console -->
+  <meta name="google-site-verification" content="verification_token">
+
+  <!-- Yandex Webmasters -->
+  <meta name="yandex-verification" content="verification_token">
+
+  <!-- Bing Webmaster Center -->
+  <meta name="msvalidate.01" content="verification_token">
+
+  <!-- Alexa Console -->
+  <meta name="alexaVerifyID" content="verification_token">
+
+  <!-- Pinterest Console-->
+  <meta name="p:domain_verify" content="code_from_pinterest">
+
+  <!-- Norton Safe Web -->
+  <meta name="norton-safeweb-site-verification" content="norton_code">
+
+  <!-- Identify the software used to build the document (i.e. - WordPress, Dreamweaver) -->
+  <meta name="generator" content="Jekyll">
+
+  <!-- Prefetching, preloading, prebrowsing -->
+
+  <!-- More info: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
+  <link rel="dns-prefetch" href="//example.com/">
+  <link rel="preconnect" href="https://www.example.com/">
+  <link rel="prefetch" href="https://www.example.com/">
+  <link rel="prerender" href="http://example.com/">
+  <link rel="preload" href="image.png" as="image">
+
 </head>
