@@ -4,6 +4,7 @@ layout: default
 <!-- This loops through the paginated posts -->
 
 <h4 id="latest-posts" class="dk-grey-text">Latest Posts</h4>
+<hr class="small-hr">
 {% for post in paginator.posts %}
   <h2 class="title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
   <p class="author">
