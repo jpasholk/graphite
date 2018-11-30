@@ -21,7 +21,7 @@ title: Archive
     <ul class="tag-list">
     {% for post in site.tags[tag] %}
       <li>
-        <span class=""></span> <time class="" itemprop="dateCreated" datetime="{{post.date}}">{{post.date | date: "%b %d, %Y "}} - </time>
+        <time class="archive-date" itemprop="dateCreated" datetime="{{post.date}}">{{post.date | date: "%b %d, %Y "}} - </time>
         <a href="{{site.baseurl}}{{post.url}}" rel="bookmark" title="Link to {{site.baseurl}}{{post.url}}">{{post.title}}</a><span class="archive-read-time"> - {% include reading-time.html %}</span>
       </li>
     {% endfor %}

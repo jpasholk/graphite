@@ -18,7 +18,7 @@ nav {
   }
 }
 
-.author {
+.author, .archive-read-time {
   color: $lt-grey;
 }
 
@@ -34,14 +34,10 @@ footer {
   letter-spacing: .45rem;
 }
 
-span.previous, span.next {
+span.previous, span.next, .archive-date{
   color: $dkr-grey;
 }
 
 .page_number {
-  color: $lt-grey;
-}
-
-.archive-read-time {
   color: $lt-grey;
 }
