@@ -1,0 +1,12 @@
+<!-- https://jekyllcodex.org/without-plugin/breadcrumbs/# -->
+<div id="breadcrumbs">
+{% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+<a href="{{ "/" | relative_url }}">Home</a>
+{% for crumb in crumbs offset: 4 %} <!-- Changed this to 4 for posts. -->
+  {% if forloop.last %}
+    / {{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}
+  {% else %}
+    / <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
+  {% endif %}
+{% endfor %}
+</div>

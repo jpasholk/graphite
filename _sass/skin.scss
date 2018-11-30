@@ -22,8 +22,12 @@ nav {
   }
 }
 
-.author, .archive-read-time {
+.author, .archive-read-time, #breadcrumbs a, #breadcrumbs-page a {
   color: $lt-grey;
+}
+
+#breadcrumbs-page {
+  // color: $dk-grey;
 }
 
 // https://css-tricks.com/examples/hrs/
