@@ -26,7 +26,7 @@ body {
     font-size: 1em;
     line-height: 1.375;
   }
-  p.author {
+  p.author, span.archive-read-time {
     font-size: .9rem;
     margin-top: 1rem auto;
   }
@@ -79,6 +79,27 @@ blockquote {
     font-size: 1.5em;
     line-height: 1.45833333;
   }
+}
+
+.tags {
+  font-size: .95rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: $lt-grey;
+  a {
+    text-decoration: none;
+    color: $ltr-grey;
+  }
+}
+
+.tag-name {
+  text-transform: capitalize;
+}
+
+.tag-list {
+  list-style: none;
+  padding-inline-start: 0;
+  -webkit-padding-start: 0;
 }
 
 footer p {

@@ -16,12 +16,11 @@ You can write regular [markdown](https://markdowntutorial.com/) here and Jekyll 
 Here's a useless table:
 
 | Number | Next number | Previous number |
-| :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
-
+| :------ |:--- | :--- | :--- |
+| Five | Six | Four | Three |
+| Ten | Eleven | Nine | Eight |
+| Seven | Eight | Six | Five |
+| Two | Three | One | Zero |
 
 How about a yummy crepe?
 

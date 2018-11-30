@@ -63,10 +63,16 @@ img {
 table {
   width: 80%;
   border-collapse: collapse;
+  table-layout: fixed;
+
 }
 
 thead {
   background-color: $dk-grey;
+  color: $grey;
+  font-size: .7rem;
+  letter-spacing: .2rem;
+  // border-bottom: 1px solid $dkr-grey;
 }
 
 thead th:nth-child(1) {
@@ -81,13 +87,25 @@ th, td {
   padding: .4rem;
 }
 
-tbody tr:nth-child(even) {
+tbody tr:nth-child(odd) {
   background-color: $lt-grey;
+  border-top: 1px solid $dkr-grey;
 }
 
-tbody tr:nth-last-child(1) {
-  border-radius: 0 0 4px 4px;
+tbody tr:nth-child(even) {
+  background-color: $dk-grey;
+  border-top: 1px solid $dkr-grey;
 }
+
+tbody tr:last-child td:first-child {
+  border-radius: 0 0 0 4px;
+}
+
+tbody tr:last-child td:last-child  {
+  border-radius: 0 0 4px 0;
+}
+
+
 
 
 footer {
