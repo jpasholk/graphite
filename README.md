@@ -4,6 +4,8 @@ A Jekyll theme focusing on typography.
 
 Live [Demo](https://jpasholk.com/Graphite/)
 
+![Lunr Search Example](/assets/img/LunrSearch.gif)
+
 ---
 
 This theme is mostly for me to learn about how to actually design, instead of using a framework.
