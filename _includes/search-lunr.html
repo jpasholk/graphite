@@ -64,6 +64,10 @@ function lunr_search(term) {
     .lunrsearchresult a:hover .title {text-decoration: underline;}
     input#lunrsearch {border-radius: 4px 0 0 4px; background-color: #e9e8e6; border: none; padding: .25rem 1rem; font-size: 16px; min-width: 25%; }
     button {border: none; padding: .25rem 1rem; color: #e9e8e6; background-color: #61656e; border-radius: 0 4px 4px 0;}
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus {background-color: #61656e !important;}
+    input[type=text]:focus, button[type=submit] {outline-color: #61656e;}
 </style>
 
 
