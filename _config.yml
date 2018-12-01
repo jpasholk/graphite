@@ -39,6 +39,7 @@ timezone: America/Los_Angeles # https://en.wikipedia.org/wiki/List_of_tz_databas
 
 sass:
     sass_dir: _sass
+    style: compressed
 
 markdown: kramdown
 defaults:
