@@ -14,6 +14,10 @@ Live [Demo](https://jpasholk.com/Graphite/)
 
 ![Lunr Search Example](/assets/img/LunrSearch.gif)
 
+[Lunr's Website](https://lunrjs.com)
+
+[Lunr Script Credit - jekyllcodex.com](https://jekyllcodex.org/without-plugin/search-lunr/#)
+
 ### Stunning Typography
 
 With the [Inter Ui](https://rsms.me/inter/) Font Family front and center, it's hard to mess up how the text looks. Created by Rasmus Anderson to be used for reading text on screens.
