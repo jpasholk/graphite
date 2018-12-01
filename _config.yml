@@ -29,7 +29,7 @@ plugins:
   - jekyll-sitemap
 
 # 3. Gem settings
-paginate_path: "/blog/page:num/"
+paginate_path: "/page:num/"
 paginate: 1
 
 # 4. Jekyll settings
