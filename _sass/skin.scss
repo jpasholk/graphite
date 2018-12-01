@@ -1,48 +1,65 @@
-.dk-grey-text {
-  color: $dk-grey;
-}
+$ltr-grey: #fbfbf9;
+$lt-grey:  #e9e8e6;
+$grey:     #bac0ce;
+$dk-grey:  #61656e;
+$dkr-grey: #2f2c30;
+$blk:      #000000;
 
-body {
-  background-color: $grey;
-  h2.title, h2 a {
-    color: $dkr-grey;
-    text-decoration: none;
-  }
-  a {
-    color: $dk-grey;
-  }
+.ltr-grey-text {color: $ltr-grey;}
+.lt-grey-text  {color: $lt-grey;}
+.grey-text     {color: $grey;}
+.dk-grey-text  {color: $dk-grey;}
+.dkr-grey-text {color: $dkr-grey;}
+
+.ltr-grey-bg {background-color: $ltr-grey;}
+.lt-grey-bg  {background-color: $lt-grey;}
+.grey-bg     {background-color: $grey;}
+.dk-grey-bg  {background-color: $dk-grey;}
+.dkr-grey-bg {background-color: $dkr-grey;}
+
+a {
+  color: $dk-grey;
 }
 
 nav {
   h1 a {
-    color: #000;
+    color: $blk;
   }
   li a {
     color: $ltr-grey;
   }
 }
 
-.author, .archive-read-time, #breadcrumbs a, #breadcrumbs-page a {
+.tags {
+  color: $lt-grey;
+  a {
+    color: $lt-grey;
+  }
+}
+
+thead {
+  background-color: $dk-grey;
+  color: $grey;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: $lt-grey;
+}
+
+tbody tr:nth-child(even) {
+  background-color: $dk-grey;
+}
+
+.post-meta,
+.archive-read-time,
+#breadcrumbs a,
+#breadcrumbs-page a {
   color: $lt-grey;
 }
 
-
-// https://css-tricks.com/examples/hrs/
-hr {
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-}
-
+span.previous,
+span.next,
+.archive-date,
 footer {
   color: $dkr-grey;
-  letter-spacing: .45rem;
-}
-
-span.previous, span.next, .archive-date{
-  color: $dkr-grey;
-}
-
-.page_number {
-  color: $lt-grey;
 }
