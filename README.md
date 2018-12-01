@@ -8,6 +8,10 @@ Live [Demo](https://jpasholk.com/Graphite/)
 
 ### Lunr Search
 
+> Designed to be small, yet full featured, Lunr enables you to provide a great search experience without the need for external, server-side, search services.
+
+> Lunr has no external dependencies and works in your browser or on the server with node.js
+
 ![Lunr Search Example](/assets/img/LunrSearch.gif)
 
 ### Stunning Typography
