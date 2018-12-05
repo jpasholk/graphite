@@ -63,6 +63,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  margin-top: -1rem;
 }
 
 nav {
@@ -74,9 +75,7 @@ nav {
   a {
     text-decoration: none;
   }
-  @media screen and (max-width: 768px) {
-    // flex-direction: column;
-  }
+  
   h1 {
     flex: 1 1 auto;
     @media (max-width: 768px) {
