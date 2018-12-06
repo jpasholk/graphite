@@ -31,7 +31,7 @@ function switchTheme() {
     };
 }
 
-SWITCH.addEventListener("click", () => switchTheme(), false);
+SWITCH.addEventListener("click", switchTheme, false);
 
 
 // **************************************************************************
