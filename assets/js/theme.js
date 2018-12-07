@@ -16,14 +16,21 @@ const SWITCH = document.querySelector('.theme');
 
 function switchTheme() {
     if (BODY.classList.contains("grey-bg")) {
+        localStorage.setItem("dark-mode", true);
         BODY.classList.replace("grey-bg", "dk-grey-bg");
     }
     else if (BODY.classList.contains("dk-grey-bg")) {
+        localStorage.removeItem("dark-mode");
         BODY.classList.replace("dk-grey-bg", "grey-bg");
     };
 }
 
+if (localStorage.getItem("dark-mode")) {
+    switchTheme();
+};
+
 SWITCH.addEventListener("click", switchTheme, false);
+
 
 
 // **************************************************************************
