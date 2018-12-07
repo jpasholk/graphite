@@ -18,25 +18,19 @@ function switchTheme() {
     if (BODY.classList.contains("grey-bg")) {
         localStorage.setItem("dark-mode", true);
         BODY.classList.replace("grey-bg", "dk-grey-bg");
-        // This is the only way I could get links to be syled. links.classList.add() was throwing type errors.
-        for(var i = 0; i < LINKS.length; i++) { 
-            LINKS[i].style.color = "#bac0ce";
-        };
     }
     else if (BODY.classList.contains("dk-grey-bg")) {
         localStorage.removeItem("dark-mode");
         BODY.classList.replace("dk-grey-bg", "grey-bg");
-        // This is the only way I could get links to be syled. links.classList.add() was throwing type errors.
-        for(var i = 0; i < LINKS.length; i++) { 
-            LINKS[i].style.color = "#61656e";
-        }
     };
 }
 
 if (localStorage.getItem("dark-mode")) {
     switchTheme();
-}
-SWITCH.addEventListener("click", () => switchTheme(), false);
+};
+
+SWITCH.addEventListener("click", switchTheme, false);
+
 
 
 // **************************************************************************

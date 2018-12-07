@@ -20,7 +20,10 @@ $blk:      #000000;
 
 
 a {
-  color: $dk-grey;
+  @extend .dk-grey-text;
+  body.dk-grey-bg & {
+    @extend .grey-text;
+  }
 }
 
 nav {
