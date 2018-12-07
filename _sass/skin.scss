@@ -10,7 +10,7 @@ $blk:      #000000;
 .grey-text     {color: $grey;}
 .dk-grey-text  {color: $dk-grey;}
 .dkr-grey-text {color: $dkr-grey;}
-.blk-text      {color: #000000}
+.blk-text      {color: $blk;}
 
 .ltr-grey-bg {background-color: $ltr-grey;}
 .lt-grey-bg  {background-color: $lt-grey;}
@@ -28,43 +28,43 @@ a {
 
 nav {
   h1 a {
-    color: $blk;
+    @extend .blk-text;
   }
   li a {
-    color: $ltr-grey;
+    @extend .ltr-grey-text;
   }
 }
 
 .tags {
-  color: $lt-grey;
+  @extend .lt-grey-text;
   a {
-    color: $lt-grey;
+    @extend .lt-grey-text;
   }
 }
 
 thead {
-  background-color: $dk-grey;
-  color: $grey;
+  @extend .dk-grey-bg;
+  @extend .grey-text;
 }
 
 tbody tr:nth-child(odd) {
-  background-color: $lt-grey;
+  @extend .lt-grey-bg;
 }
 
 tbody tr:nth-child(even) {
-  background-color: $dk-grey;
+  @extend .dk-grey-bg;
 }
 
 .post-meta,
 .archive-read-time,
 #breadcrumbs a,
 #breadcrumbs-page a {
-  color: $lt-grey;
+  @extend .lt-grey-text;
 }
 
 span.previous,
 span.next,
 .archive-date,
 footer {
-  color: $dkr-grey;
+  @extend .dkr-grey-text;
 }
