@@ -2,7 +2,7 @@
 
 A Jekyll theme focusing on typography.
 
-Live [Demo](https://jpasholk.com/Graphite/)
+Live [Demo](https://jpasholk.com/graphite/)
 
 ## Features
 
