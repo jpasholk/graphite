@@ -12,4 +12,8 @@ layout: default
 
 {{ content }}
 
+<br>
+{% for tag in page.tags %}
+<span class ="tags tags-post"><a href="{{ site.baseurl }}/archive/index.html#{{ tag | cgi_escape }}" title="Pages tagged {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %},</span> {% endunless %}{% endfor %}
+
 {% include post-pagination.html %}
