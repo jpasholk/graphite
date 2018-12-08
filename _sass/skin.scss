@@ -70,6 +70,7 @@ tbody tr:nth-child(even) {
   @extend .dk-grey-bg;
   body.dk-grey-bg & {
     @extend .dkr-grey-bg;
+    @extend .grey-text;
  }
 }
 
