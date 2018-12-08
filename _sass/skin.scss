@@ -27,6 +27,13 @@ a {
   }
 }
 
+button {
+  body.dk-grey-bg & {
+    @extend .dkr-grey-bg;
+    @extend .dk-grey-text;
+  }
+}
+
 nav {
   h1 a {
     @extend .blk-text;
@@ -46,14 +53,24 @@ nav {
 thead {
   @extend .dk-grey-bg;
   @extend .grey-text;
+  body.dk-grey-bg & {
+    @extend .dkr-grey-bg;
+    @extend .dk-grey-text;
+  }
 }
 
 tbody tr:nth-child(odd) {
   @extend .lt-grey-bg;
+  body.dk-grey-bg & {
+    @extend .grey-bg;
+  }
 }
 
 tbody tr:nth-child(even) {
   @extend .dk-grey-bg;
+  body.dk-grey-bg & {
+    @extend .dkr-grey-bg;
+ }
 }
 
 .post-meta,
