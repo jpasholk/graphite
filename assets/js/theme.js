@@ -1,29 +1,16 @@
-//Semi Functional Darkmode
-
-    // Still need to:
-    //
-    // Style the search button
-    //
-    // Add sessionStorage so the theme choice persists throughout browsing session.
-    //
-    // Probably refactor the entire thing as I'm a complete fucking noob. 
-    //
-    // ;P
-
-const BODY = document.querySelector('body');
-const LINKS = document.querySelectorAll('article p a, article li a');
+var body = document.querySelector('body');
 const SWITCH = document.querySelector('.theme');
 
 function switchTheme() {
-    if (BODY.classList.contains("grey-bg")) {
+    if (body.classList.contains("grey-bg")) {
         localStorage.setItem("dark-mode", true);
-        BODY.classList.replace("grey-bg", "dk-grey-bg");
+        body.classList.replace("grey-bg", "dk-grey-bg");
     }
-    else if (BODY.classList.contains("dk-grey-bg")) {
+    else if (body.classList.contains("dk-grey-bg")) {
         localStorage.removeItem("dark-mode");
-        BODY.classList.replace("dk-grey-bg", "grey-bg");
+        body.classList.replace("dk-grey-bg", "grey-bg");
     };
-}
+};
 
 if (localStorage.getItem("dark-mode")) {
     switchTheme();
