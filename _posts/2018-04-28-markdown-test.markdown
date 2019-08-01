@@ -5,7 +5,7 @@ date: "2018-04-28 13:30:00 -0700"
 tags: [test, markdown, docs]
 ---
 
-You can write regular [markdown](https://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
+You can write regular [markdown](https://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to take 5 minutes to learn how to write in markdown - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
 
 <!--more-->
 
@@ -15,7 +15,7 @@ You can write regular [markdown](https://markdowntutorial.com/) here and Jekyll 
 
 Here's a useless table:
 
-| Number | Next number | Previous number |
+| Column | Next column | Another column | Last column |
 | :------ |:--- | :--- | :--- |
 | Five | Six | Four | Three |
 | Ten | Eleven | Nine | Eight |

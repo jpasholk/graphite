@@ -24,13 +24,13 @@ If you're running Jekyll v3.5+ and self-hosting you can quickly install the them
 Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
-gem "jekyll-uikit"
+gem "graphite"
 ```
 
 Add this line to your Jekyll site's `_config.yml` file:
 
 ```yaml
-theme: jekyll-uikit
+theme: graphite
 ```
 
 Then run Bundler to install the theme gem and dependencies:
@@ -51,7 +51,7 @@ gem "github-pages", group: :jekyll_plugins
 
 Run `bundle update` and verify that all gems install properly.
 
-Add `remote_theme: "jpasholk/jekyll-uikit"` to your `_config.yml` file. Remove any other `theme:` or `remote_theme:` entry.
+Add `remote_theme: "jpasholk/graphite"` to your `_config.yml` file. Remove any other `theme:` or `remote_theme:` entry.
 
 ---
 
@@ -62,7 +62,7 @@ If you're hosting several Jekyll based sites under the same GitHub username you 
 
 You can also install the theme by copying all of the theme files into your project and removing what you don't need.
 
-To do so fork the [Jekyll-UiKit theme](https://github.com/jpasholk/jekyl-uikit/fork), then rename the repo to **USERNAME.github.io** --- replacing **USERNAME** with your GitHub username.
+To do so fork the [graphite theme](https://github.com/jpasholk/jekyl-uikit/fork), then rename the repo to **USERNAME.github.io** --- replacing **USERNAME** with your GitHub username.
 
 **GitHub Pages Alternatives:** Looking to host your site for free and install/update the theme painlessly? [Netflify][netlify-jekyll], [GitLab Pages][gitlab-jekyll], and [Continuous Integration (CI) services][ci-jekyll] have you covered. In most cases all you need to do is connect your repository to them, create a simple configuration file, and install the theme following the [Ruby Gem Method](#ruby-gem-method) above.
 {: .uk-alert .uk-padding-small}
@@ -73,17 +73,17 @@ To do so fork the [Jekyll-UiKit theme](https://github.com/jpasholk/jekyl-uikit/f
 
 ### Remove the Unnecessary
 
-If you forked or downloaded the `jekyll-uikit` repo you can safely remove the following folders and files:
+If you forked or downloaded the `graphite` repo you can safely remove the following folders and files:
 
 - `changelog.md`
-- `jekyll-uikit-jekyll.gemspec`
+- `graphite-jekyll.gemspec`
 - `README.md`
 - `screenshot.png`
 - Everything in `_posts`
 
 ## Setup Your Site
 
-Depending on the path you took installing Jekyll-UiKit you'll setup things a little differently.
+Depending on the path you took installing graphite you'll setup things a little differently.
 
 ### Starting Fresh
 
@@ -99,7 +99,7 @@ Edit `_config.yml`. Then:
 
 ### Migrating to Gem Version
 
-If you're migrating a site already using Jekyll-Uikit and haven't customized any of the theme files things upgrading will be easier for you.
+If you're migrating a site already using graphite and haven't customized any of the theme files things upgrading will be easier for you.
 
 Start by removing the following folders and any files within them:
 
@@ -120,10 +120,10 @@ You won't need these anymore as they're bundled with the theme gem --- unless yo
 
 [^update-jekyll]: You could also run `bundle update jekyll` to update Jekyll.
 
-Add the Jekyll-Uikit theme gem:
+Add the graphite theme gem:
 
 ```ruby
-gem "jekyll-uikit"
+gem "graphite"
 ```
 
 When finished your `Gemfile` should look something like this:
@@ -132,7 +132,7 @@ When finished your `Gemfile` should look something like this:
 source "https://rubygems.org"
 
 gem "jekyll", "~> 3.5"
-gem "jekyll-uikit"
+gem "graphite"
 ```
 
 Then run `bundle update` and add `theme: jekyl-uikit` to your `_config.yml`.

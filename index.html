@@ -4,7 +4,7 @@ layout: default
 {% include breadcrumbs.html %}
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
-  <h2 class=""><a class="blk-text" href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+  <h2 class=""><a class="" href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
   <p class="post-meta">
     <span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
     {% include reading-time.html %}

@@ -1,0 +1,56 @@
+// Global Table Styles
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+  
+  thead {
+    font-size: .7rem;
+    letter-spacing: .25rem;
+    text-transform: uppercase;
+  }
+  
+  thead th:nth-child(1) {
+    border-radius: 4px 0 0 0;
+  }
+  
+  thead th:nth-last-child(1) {
+    border-radius: 0 4px 0 0;
+  }
+  
+  th, td {
+    padding: .4rem;
+  }
+  
+  tbody tr:nth-child(odd) {
+    border-top: 1px solid $dkr-grey;
+  }
+  
+  tbody tr:nth-child(even) {
+    border-top: 1px solid $dkr-grey;
+  }
+  
+  tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 4px;
+  }
+  
+  tbody tr:last-child td:last-child  {
+    border-radius: 0 0 4px 0;
+  }
+
+//   Table Skin
+
+thead {
+    @extend .dk-grey-bg;
+    @extend .lt-grey-text;
+  }
+  
+  tbody tr:nth-child(odd) {
+    @extend .grey-bg;
+  }
+  
+  tbody tr:nth-child(even) {
+    @extend .dk-grey-bg;
+  }

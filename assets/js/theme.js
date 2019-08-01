@@ -1,22 +1,24 @@
-var body = document.querySelector('body');
-const SWITCH = document.querySelector('.theme');
+// var body = document.querySelector('body');
+// const SWITCH = document.querySelector('.theme');
 
-function switchTheme() {
-    if (body.classList.contains("grey-bg")) {
-        localStorage.setItem("dark-mode", true);
-        body.classList.replace("grey-bg", "dk-grey-bg");
-    }
-    else if (body.classList.contains("dk-grey-bg")) {
-        localStorage.removeItem("dark-mode");
-        body.classList.replace("dk-grey-bg", "grey-bg");
-    };
-};
+// function switchTheme() {
+//     if (body.classList.contains("wht-bg")) {
+//         localStorage.setItem("dark-mode", true);
+//         body.classList.replace("wht-bg", "dk-grey-bg");
+// //        body.classList.replace("blk-text", "wht-text");
+//     }
+//     else if (body.classList.contains("dk-grey-bg")) {
+//         localStorage.removeItem("dark-mode");
+//         body.classList.replace("dk-grey-bg", "wht-bg");
+// //        body.classList.replace("wht-text", "blk-text");
+//     };
+// };
 
-if (localStorage.getItem("dark-mode")) {
-    switchTheme();
-};
+// if (localStorage.getItem("dark-mode")) {
+//     switchTheme();
+// };
 
-SWITCH.addEventListener("click", switchTheme, false);
+// SWITCH.addEventListener("click", switchTheme, false);
 
 
 
@@ -29,14 +31,12 @@ SWITCH.addEventListener("click", switchTheme, false);
 //document.querySelector('.theme').addEventListener("click", () => {
 //    if (body.classList.contains("grey-bg")) {
 //        body.classList.replace("grey-bg", "dk-grey-bg");
-//        // This is the only way I could get links to be syled. links.classList.add() was throwing type errors.
 //        for(var i = 0; i < links.length; i++) { 
 //            links[i].style.color = "#bac0ce";
 //        };
 //    }
 //    else if (body.classList.contains("dk-grey-bg")) {
 //        body.classList.replace("dk-grey-bg", "grey-bg");
-//        // This is the only way I could get links to be syled. links.classList.add() was throwing type errors.
 //        for(var i = 0; i < links.length; i++) { 
 //            links[i].style.color = "#61656e";
 //        }
