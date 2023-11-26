@@ -30,7 +30,7 @@ plugins:
 
 # 3. Gem settings
 paginate_path: "/page:num/"
-paginate: 1
+paginate: 3
 
 # 4. Jekyll settings
 permalink: /:year/:month/:day/:title/
